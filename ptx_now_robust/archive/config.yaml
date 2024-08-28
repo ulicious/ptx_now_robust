@@ -1,0 +1,8 @@
+chosen_optimization_setting: custom
+optimization_or_visualization: optimize
+path_data: /home/localadmin/Dokumente/ptx_now_data/data/
+path_optimize: Ammonia_robust_14.yaml
+path_projects: /home/localadmin/Dokumente/ptx_now_data/settings/
+path_result: /home/localadmin/Dokumente/ptx_now_data/results/
+path_visualization: null
+solver: gurobi
