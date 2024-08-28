@@ -1,0 +1,169 @@
+commodity:
+  Electricity:
+    available: false
+    demand: 100.0
+    demand_type: fixed
+    demanded: false
+    emitted: false
+    energy_content: 1.0
+    final: true
+    name: Electricity
+    purchasable: false
+    purchase_price: 0.0
+    purchase_price_type: fixed
+    saleable: false
+    selling_price: 0.0
+    selling_price_type: fixed
+    specific_co2_emissions_available: 0.0
+    specific_co2_emissions_emitted: 0.0
+    specific_co2_emissions_purchase: 0.0
+    specific_co2_emissions_sale: 0.0
+    total_demand: true
+    unit: MWh
+  Hydrogen:
+    available: false
+    demand: 1500000.0
+    demand_type: fixed
+    demanded: true
+    emitted: false
+    energy_content: 1.0
+    final: true
+    name: Hydrogen
+    purchasable: false
+    purchase_price: 0.0
+    purchase_price_type: fixed
+    saleable: false
+    selling_price: 100.0
+    selling_price_type: fixed
+    specific_co2_emissions_available: 0.0
+    specific_co2_emissions_emitted: 0.0
+    specific_co2_emissions_purchase: 0.0
+    specific_co2_emissions_sale: 0.0
+    total_demand: true
+    unit: MWh
+component:
+  Electricity:
+    capex: 330.0
+    charging_efficiency: 0.85
+    component_type: storage
+    discharging_efficiency: 1.0
+    disposal_co2_emissions: 7.9211
+    final: true
+    fixed_capacity: 0.0
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.05644999999999999
+    has_fixed_capacity: false
+    installation_co2_emissions: 97.7242
+    lifetime: 20
+    max_soc: 0.9
+    min_soc: 0.1
+    name: Electricity
+    ratio_capacity_p: 1.0
+    variable_co2_emissions: 0.0
+    variable_om: 0.00164375
+  Hydrogen:
+    capex: 10000.0
+    charging_efficiency: 1.0
+    component_type: storage
+    discharging_efficiency: 1.0
+    disposal_co2_emissions: 0.0
+    final: true
+    fixed_capacity: 0.0
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.0
+    has_fixed_capacity: false
+    installation_co2_emissions: 0.033
+    lifetime: 20
+    max_soc: 1.0
+    min_soc: 0.0
+    name: Hydrogen
+    ratio_capacity_p: 1.0
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  Solar:
+    capex: 310.0
+    component_type: generator
+    curtailment_possible: true
+    disposal_co2_emissions: 0.0
+    final: true
+    fixed_capacity: 0.0
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.01
+    generated_commodity: Electricity
+    has_fixed_capacity: false
+    installation_co2_emissions: 2493.0
+    lifetime: 20
+    name: Solar
+    ppa_price: 0.0
+    uses_ppa: false
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  Wind:
+    capex: 1040.0
+    component_type: generator
+    curtailment_possible: true
+    disposal_co2_emissions: 0.0
+    final: true
+    fixed_capacity: 0.0
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.0121
+    generated_commodity: Electricity
+    has_fixed_capacity: false
+    installation_co2_emissions: 1086.0
+    lifetime: 20
+    name: Wind
+    ppa_price: 0.0
+    uses_ppa: false
+    variable_co2_emissions: 0.00019
+    variable_om: 0.0
+  electrolyzer:
+    base_capacity: 0.0
+    base_investment: 0.0
+    capex: 810.0
+    capex_basis: input
+    component_type: conversion
+    disposal_co2_emissions: 0.0
+    economies_of_scale: 0.0
+    final: true
+    fixed_capacity: 0.0
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.05
+    has_fixed_capacity: false
+    hot_standby_ability: false
+    hot_standby_commodity: ''
+    hot_standby_demand: 0
+    hot_standby_startup_time: 0
+    installation_co2_emissions: 114.0
+    lifetime: 20
+    max_capacity_economies_of_scale: 0.0
+    max_p: 1.0
+    min_p: 0.07
+    name: electrolyzer
+    number_parallel_units: 1
+    ramp_down: 1.0
+    ramp_up: 1.0
+    scalable: false
+    shut_down_ability: false
+    start_up_costs: 0
+    start_up_time: 0
+    variable_co2_emissions: 0.00092
+    variable_om: 0.0
+conversions:
+  electrolyzer:
+    input:
+      Electricity: 1.52
+    main_input: Electricity
+    main_output: Hydrogen
+    output:
+      Hydrogen: 1.0
+data:
+  profile_data: Australia_c12775x-3075_t2030_l168.xlsx
+  single_or_multiple_profiles: single
+monetary_unit: "t\u20AC"
+optimization_type: economical
+project_name: hydrogen_all_data_no
+representative_periods:
+  covered_period: 168
+  uses_representative_periods: true
+version: 0.1.1
+wacc: 0.07

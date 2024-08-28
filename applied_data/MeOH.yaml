@@ -1,0 +1,532 @@
+commodity:
+  CO2:
+    available: false
+    demand: 0.0
+    demand_type: fixed
+    demanded: false
+    emitted: false
+    energy_content: 0.0
+    final: true
+    name: CO2
+    purchasable: false
+    purchase_price: 0.0
+    purchase_price_type: fixed
+    saleable: false
+    selling_price: 0.0
+    selling_price_type: fixed
+    specific_co2_emissions_available: 0.0
+    specific_co2_emissions_emitted: 0.0
+    specific_co2_emissions_purchase: 0.0
+    specific_co2_emissions_sale: 0.0
+    total_demand: false
+    unit: t
+  CO2 compressed:
+    available: false
+    demand: 0.0
+    demand_type: fixed
+    demanded: false
+    emitted: false
+    energy_content: 0.0
+    final: true
+    name: CO2 compressed
+    purchasable: false
+    purchase_price: 0.0
+    purchase_price_type: fixed
+    saleable: false
+    selling_price: 0.0
+    selling_price_type: fixed
+    specific_co2_emissions_available: 0.0
+    specific_co2_emissions_emitted: 0.0
+    specific_co2_emissions_purchase: 0.0
+    specific_co2_emissions_sale: 0.0
+    total_demand: false
+    unit: t
+  Electricity:
+    available: false
+    demand: 100.0
+    demand_type: fixed
+    demanded: false
+    emitted: false
+    energy_content: 1.0
+    final: true
+    name: Electricity
+    purchasable: false
+    purchase_price: 0.0
+    purchase_price_type: fixed
+    saleable: false
+    selling_price: 0.0
+    selling_price_type: fixed
+    specific_co2_emissions_available: 0.0
+    specific_co2_emissions_emitted: 0.0
+    specific_co2_emissions_purchase: 0.0
+    specific_co2_emissions_sale: 0.0
+    total_demand: true
+    unit: MWh
+  Hydrogen:
+    available: false
+    demand: 1.0
+    demand_type: fixed
+    demanded: false
+    emitted: false
+    energy_content: 1.0
+    final: true
+    name: Hydrogen
+    purchasable: false
+    purchase_price: 0.0
+    purchase_price_type: fixed
+    saleable: false
+    selling_price: 100.0
+    selling_price_type: fixed
+    specific_co2_emissions_available: 0.0
+    specific_co2_emissions_emitted: 0.0
+    specific_co2_emissions_purchase: 0.0
+    specific_co2_emissions_sale: 0.0
+    total_demand: true
+    unit: MWh
+  Hydrogen compressed:
+    available: false
+    demand: 0.0
+    demand_type: fixed
+    demanded: false
+    emitted: false
+    energy_content: 1.0
+    final: true
+    name: Hydrogen compressed
+    purchasable: false
+    purchase_price: 0.0
+    purchase_price_type: fixed
+    saleable: false
+    selling_price: 0.0
+    selling_price_type: fixed
+    specific_co2_emissions_available: 0.0
+    specific_co2_emissions_emitted: 0.0
+    specific_co2_emissions_purchase: 0.0
+    specific_co2_emissions_sale: 0.0
+    total_demand: false
+    unit: MWh
+  MeOH:
+    available: false
+    demand: 313860.0
+    demand_type: fixed
+    demanded: true
+    emitted: false
+    energy_content: 5.53611
+    final: true
+    name: MeOH
+    purchasable: false
+    purchase_price: 0.0
+    purchase_price_type: fixed
+    saleable: false
+    selling_price: 0.0
+    selling_price_type: fixed
+    specific_co2_emissions_available: 0.0
+    specific_co2_emissions_emitted: 0.0
+    specific_co2_emissions_purchase: 0.0
+    specific_co2_emissions_sale: 0.0
+    total_demand: true
+    unit: t
+  Water:
+    available: false
+    demand: 0.0
+    demand_type: fixed
+    demanded: false
+    emitted: false
+    energy_content: 0.0
+    final: true
+    name: Water
+    purchasable: true
+    purchase_price: 0.002
+    purchase_price_type: fixed
+    saleable: false
+    selling_price: 0.0
+    selling_price_type: fixed
+    specific_co2_emissions_available: 0.0
+    specific_co2_emissions_emitted: 0.0
+    specific_co2_emissions_purchase: 0.0
+    specific_co2_emissions_sale: 0.0
+    total_demand: false
+    unit: t
+component:
+  CO2 Dekompressor:
+    base_capacity: 0.0
+    base_investment: 0.0
+    capex: 0.0
+    capex_basis: input
+    component_type: conversion
+    disposal_co2_emissions: 0.0
+    economies_of_scale: 0.0
+    final: true
+    fixed_capacity: 0.0
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.0
+    has_fixed_capacity: false
+    hot_standby_ability: false
+    hot_standby_commodity: ''
+    hot_standby_demand: 0
+    hot_standby_startup_time: 0
+    installation_co2_emissions: 0.0
+    lifetime: 1
+    max_capacity_economies_of_scale: 0.0
+    max_p: 1.0
+    min_p: 0.0
+    name: CO2 Dekompressor
+    number_parallel_units: 1
+    ramp_down: 1.0
+    ramp_up: 1.0
+    scalable: false
+    shut_down_ability: false
+    start_up_costs: 0
+    start_up_time: 0
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  CO2 Kompressor:
+    base_capacity: 0.0
+    base_investment: 0.0
+    capex: 3241.27
+    capex_basis: input
+    component_type: conversion
+    disposal_co2_emissions: 0.0
+    economies_of_scale: 0.0
+    final: true
+    fixed_capacity: 3.6211902473684088
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.04
+    has_fixed_capacity: false
+    hot_standby_ability: false
+    hot_standby_commodity: ''
+    hot_standby_demand: 0
+    hot_standby_startup_time: 0
+    installation_co2_emissions: 4.5
+    lifetime: 20
+    max_capacity_economies_of_scale: 0.0
+    max_p: 1.0
+    min_p: 0.0
+    name: CO2 Kompressor
+    number_parallel_units: 1
+    ramp_down: 1.0
+    ramp_up: 1.0
+    scalable: false
+    shut_down_ability: false
+    start_up_costs: 0
+    start_up_time: 0
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  CO2 compressed:
+    capex: 45.14
+    charging_efficiency: 1.0
+    component_type: storage
+    discharging_efficiency: 1.0
+    disposal_co2_emissions: 0.0053
+    final: true
+    fixed_capacity: 87.15722928322157
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.01
+    has_fixed_capacity: false
+    installation_co2_emissions: 1.593
+    lifetime: 1
+    max_soc: 1.0
+    min_soc: 0.0
+    name: CO2 compressed
+    ratio_capacity_p: 1.0
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  DAC:
+    base_capacity: 0.0
+    base_investment: 0.0
+    capex: 6395
+    capex_basis: output
+    component_type: conversion
+    disposal_co2_emissions: 0.0
+    economies_of_scale: 0.0
+    final: true
+    fixed_capacity: 102.897531808985
+    fixed_co2_emissions: 0.00154
+    fixed_om: 0.07
+    has_fixed_capacity: false
+    hot_standby_ability: false
+    hot_standby_commodity: ''
+    hot_standby_demand: 0
+    hot_standby_startup_time: 0
+    installation_co2_emissions: 6.18818195493226
+    lifetime: 25
+    max_capacity_economies_of_scale: 0.0
+    max_p: 1.0
+    min_p: 0.0
+    name: DAC
+    number_parallel_units: 1
+    ramp_down: 1.0
+    ramp_up: 1.0
+    scalable: false
+    shut_down_ability: false
+    start_up_costs: 0
+    start_up_time: 0
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  Electricity:
+    capex: 330.0
+    charging_efficiency: 0.85
+    component_type: storage
+    discharging_efficiency: 1.0
+    disposal_co2_emissions: 7.921
+    final: true
+    fixed_capacity: 193.22983588619422
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.0564
+    has_fixed_capacity: false
+    installation_co2_emissions: 97.724
+    lifetime: 20
+    max_soc: 0.9
+    min_soc: 0.1
+    name: Electricity
+    ratio_capacity_p: 1.0
+    variable_co2_emissions: 0.0
+    variable_om: 0.00164375
+  H2 Dekompressor:
+    base_capacity: 0.0
+    base_investment: 0.0
+    capex: 0.0
+    capex_basis: input
+    component_type: conversion
+    disposal_co2_emissions: 0.0
+    economies_of_scale: 0.0
+    final: true
+    fixed_capacity: 253.0
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.0
+    has_fixed_capacity: false
+    hot_standby_ability: false
+    hot_standby_commodity: ''
+    hot_standby_demand: 0
+    hot_standby_startup_time: 0
+    installation_co2_emissions: 0.0
+    lifetime: 1
+    max_capacity_economies_of_scale: 0.0
+    max_p: 1.0
+    min_p: 0.0
+    name: H2 Dekompressor
+    number_parallel_units: 1
+    ramp_down: 1.0
+    ramp_up: 1.0
+    scalable: false
+    shut_down_ability: false
+    start_up_costs: 0
+    start_up_time: 0
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  H2 Kompressor:
+    base_capacity: 0.0
+    base_investment: 0.0
+    capex: 1590.01
+    capex_basis: input
+    component_type: conversion
+    disposal_co2_emissions: 0.0
+    economies_of_scale: 0.0
+    final: true
+    fixed_capacity: 0.8384862656736917
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.04
+    has_fixed_capacity: false
+    hot_standby_ability: false
+    hot_standby_commodity: ''
+    hot_standby_demand: 0
+    hot_standby_startup_time: 0
+    installation_co2_emissions: 0.65
+    lifetime: 20
+    max_capacity_economies_of_scale: 0.0
+    max_p: 1.0
+    min_p: 0.0
+    name: H2 Kompressor
+    number_parallel_units: 1
+    ramp_down: 1.0
+    ramp_up: 1.0
+    scalable: false
+    shut_down_ability: false
+    start_up_costs: 0
+    start_up_time: 0
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  Hydrogen compressed:
+    capex: 12.0
+    charging_efficiency: 1.0
+    component_type: storage
+    discharging_efficiency: 1.0
+    disposal_co2_emissions: 0.00285
+    final: true
+    fixed_capacity: 1595.9238212018251
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.04
+    has_fixed_capacity: false
+    installation_co2_emissions: 2.075
+    lifetime: 20
+    max_soc: 1.0
+    min_soc: 0.1
+    name: Hydrogen compressed
+    ratio_capacity_p: 1.0
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  Solar:
+    capex: 310.0
+    component_type: generator
+    curtailment_possible: true
+    disposal_co2_emissions: 0.0
+    final: true
+    fixed_capacity: 930.5427009959286
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.01
+    generated_commodity: Electricity
+    has_fixed_capacity: false
+    installation_co2_emissions: 2493.0
+    lifetime: 20
+    name: Solar
+    ppa_price: 0.0
+    uses_ppa: false
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  Synthesis Island:
+    base_capacity: 52.312
+    base_investment: 147278.376
+    capex: 3000
+    capex_basis: output
+    component_type: conversion
+    disposal_co2_emissions: 0.000693376244039395
+    economies_of_scale: 0.67
+    final: true
+    fixed_capacity: 275.0819978702018
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.08
+    has_fixed_capacity: false
+    hot_standby_ability: false
+    hot_standby_commodity: ''
+    hot_standby_demand: 0
+    hot_standby_startup_time: 0
+    installation_co2_emissions: 66.2532105069671
+    lifetime: 20
+    max_capacity_economies_of_scale: 100.0
+    max_p: 1.0
+    min_p: 0.2
+    name: Synthesis Island
+    number_parallel_units: 1
+    ramp_down: 0.9
+    ramp_up: 0.9
+    scalable: false
+    shut_down_ability: false
+    start_up_costs: 0
+    start_up_time: 0
+    variable_co2_emissions: 0.0
+    variable_om: 0.0
+  Wind:
+    capex: 1040.0
+    component_type: generator
+    curtailment_possible: true
+    disposal_co2_emissions: 0.0
+    final: true
+    fixed_capacity: 841.3832855751908
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.0121
+    generated_commodity: Electricity
+    has_fixed_capacity: false
+    installation_co2_emissions: 1086.146
+    lifetime: 20
+    name: Wind
+    ppa_price: 0.0
+    uses_ppa: false
+    variable_co2_emissions: 0.00019
+    variable_om: 0.0
+  electrolyzer:
+    base_capacity: 0.0
+    base_investment: 0.0
+    capex: 810.0
+    capex_basis: input
+    component_type: conversion
+    disposal_co2_emissions: 0.0
+    economies_of_scale: 0.0
+    final: true
+    fixed_capacity: 494.44194956653973
+    fixed_co2_emissions: 0.0
+    fixed_om: 0.05
+    has_fixed_capacity: false
+    hot_standby_ability: false
+    hot_standby_commodity: ''
+    hot_standby_demand: 0
+    hot_standby_startup_time: 0
+    installation_co2_emissions: 114.0
+    lifetime: 20
+    max_capacity_economies_of_scale: 0.0
+    max_p: 1.0
+    min_p: 0.07
+    name: electrolyzer
+    number_parallel_units: 1
+    ramp_down: 1.0
+    ramp_up: 1.0
+    scalable: false
+    shut_down_ability: false
+    start_up_costs: 0
+    start_up_time: 0
+    variable_co2_emissions: 0.00092
+    variable_om: 0.0
+conversions:
+  CO2 Dekompressor:
+    input:
+      CO2 compressed: 1.0
+    main_input: CO2 compressed
+    main_output: CO2
+    output:
+      CO2: 1.0
+  CO2 Kompressor:
+    input:
+      CO2: 1.0
+      Electricity: 0.06134
+    main_input: Electricity
+    main_output: CO2 compressed
+    output:
+      CO2 compressed: 1.0
+  DAC:
+    input:
+      Electricity: 1.743
+    main_input: Electricity
+    main_output: CO2
+    output:
+      CO2: 1.0
+  H2 Dekompressor:
+    input:
+      Hydrogen compressed: 1.0
+    main_input: Hydrogen compressed
+    main_output: Hydrogen
+    output:
+      Hydrogen: 1.0
+  H2 Kompressor:
+    input:
+      Electricity: 0.0167
+      Hydrogen: 1.0
+    main_input: Electricity
+    main_output: Hydrogen compressed
+    output:
+      Hydrogen compressed: 1.0
+  Synthesis Island:
+    input:
+      CO2 compressed: 1.395
+      Electricity: 0.327
+      Hydrogen: 6.36603
+    main_input: Hydrogen
+    main_output: MeOH
+    output:
+      MeOH: 1.0
+  electrolyzer:
+    input:
+      Electricity: 1.52
+      Water: 0.27
+    main_input: Electricity
+    main_output: Hydrogen
+    output:
+      Hydrogen: 1.0
+data:
+  profile_data: Australia_c12775x-3075_t2030_l168.xlsx
+  single_or_multiple_profiles: single
+monetary_unit: "t\u20AC"
+optimization_type: economical
+project_name: MeOH_all_data
+representative_periods:
+  covered_period: 168
+  uses_representative_periods: true
+version: 0.1.1
+wacc: 0.06
