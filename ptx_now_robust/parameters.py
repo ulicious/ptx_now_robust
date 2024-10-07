@@ -1,20 +1,21 @@
-basic_path = 'P:/Group_TE/GM_Uwe/PtL_Robust/'
+import os
 
-costs_missing = 0
-cost_selling = 3.5
+# this file contains all parameter assumptions
+
+basic_path = os.getcwd()
+data_path = basic_path + '/applied_data/'
+
+working_directory = 'C:/Users/mt5285/Desktop/robust/'  # todo: adjust
+
+costs_missing = 3.75
 
 electricity_available = True
 electricity_price = 10
 
 demand_type = 'total'
+energy_carrier = 'FT'  # decide between Hydrogen, FT and MeOH
+framework_name = energy_carrier + '.yaml'
 
-country = 'Germany'
-# countries = ['Germany', 'Australia', 'Kazakhstan', 'Saudi Arabia', 'Chile']
-countries = ['Australia']
+countries = ['Australia', 'Saudi Arabia', 'Chile', 'Germany', 'Kazakhstan']  # available countries: Australia, Saudi Arabia, Chile, Germany and Kazakhstan
 
-# Chile, australia
-
-framework_name = 'FT_all_data_no_scaling.yaml'
-
-cluster_length = 336
-cluster_lengths = [336]  # 168
+cluster_lengths = [24, 48, 72, 96, 120, 144, 168, 192, 216, 240, 264, 288, 312, 336, 8760]
