@@ -11,7 +11,7 @@ from ptx_now_robust.optimization_problems.primal_model_gurobi_maximization impor
 
 import parameters
 
-# this script uses the capacities derive from the ARO process and applies maximization with data of the yearly profiles
+# this script uses the capacities derived from the ARO process and applies maximization with data of the yearly profiles
 
 for country in parameters.countries:
 

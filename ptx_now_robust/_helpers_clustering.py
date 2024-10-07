@@ -12,6 +12,8 @@ from yellowbrick.cluster import KElbowVisualizer
 
 def cluster_data_head_script(data, length_cluster):
 
+    # brings data in right structure and clusters data then into representative profiles
+
     def rearrange_data():
 
         wind_cols = ['Wind_' + str(i) for i in range(length_cluster)]

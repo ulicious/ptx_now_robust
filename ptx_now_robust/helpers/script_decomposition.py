@@ -3,7 +3,7 @@ import time
 import pandas as pd
 
 from ptx_now_robust.optimization_problems.primal_model_gurobi import GurobiPrimalProblem
-from ptx_now_robust.optimization_problems.old_dual import GurobiDualProblem
+from ptx_now_robust.optimization_problems.dual_model_gurobi import GurobiDualProblem
 
 import ptx_now_robust.parameters as parameters
 

@@ -563,7 +563,7 @@ class GurobiDualProblem:
             self.saleable_commodities, self.demanded_commodities, self.total_demand_commodities, self.generated_commodities, \
             self.all_inputs, self.all_outputs = self.pm_object.get_commodity_sets()
 
-        """ Update sets and parameters as not all components are used anymore """
+        # Update sets and parameters as not all components are used anymore
         conversion_components_new = []
         for c in self.conversion_components:
             if self.optimal_capacities[c] > 0:
@@ -624,7 +624,7 @@ class GurobiDualProblem:
         self.maximal_soc_dict = maximal_soc_new
         self.ratio_capacity_power_dict = ratio_capacity_p_new
 
-        # Adjust purchase & selling price
+        # Adjust purchase & selling price --> add uniform purchase / selling price to worst case cluster
         if number_clusters > 0:
             for t in range(self.pm_object.get_covered_period()):
                 for me in self.purchasable_commodities:
@@ -641,8 +641,6 @@ class GurobiDualProblem:
         self.clusters = range(0, number_clusters + 1)
         self.weightings_dict = self.weightings
 
-        # self.model.pwconst = Piecewise(indexes, yvar, xvar, **Keywords) # todo: Implement with big m
-        # https://pyomo.readthedocs.io/en/stable/pyomo_self.modeling_components/Expressions.html
         self.bigM = anticipate_bigM(self.pm_object)
 
         self.profiles = range(0, number_profiles)
